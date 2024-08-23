@@ -10,3 +10,7 @@ This app allows users to create and see cards for various electronic devices. Ea
 
 Create New Cards: Add new cards for electronic devices with relevant information.
 View Cards: Display a list of all created cards.
+
+## Dependencies
+
+npm install
