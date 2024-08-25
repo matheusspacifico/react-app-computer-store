@@ -10,6 +10,7 @@ import terceirosImage from '../../images/terceiros.png';
 function ProductsList(props) {
 
     function chooseImage(brand) {
+        console.log(brand);
         let image;
         switch (brand) {
             case "HP":
@@ -52,7 +53,6 @@ function ProductsList(props) {
 
     return (
         <div className="ProductsList">
-            <h2>Lista de Produtos:</h2>
             {conteudo}
         </div>
     );

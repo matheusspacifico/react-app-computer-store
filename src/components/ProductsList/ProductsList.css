@@ -1,55 +1,63 @@
 .ProductsList {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
-    background-color: #1e1e1e;
-    border: 1px solid #444;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 20px auto;
-    color: #f5f5f5;
-}
-
-.ProductsList p {
-    background-color: #1e1e1e;
-}
-
-.ProductsList h2 {
-    font-size: 1.5rem;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-    background-color: #1e1e1e;
 }
 
 .ProductsList ul {
-    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 0;
-    background-color: #1e1e1e;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center;
 }
 
 .ProductsList li {
+    background-color: #000;
+    border: 2px solid #333;
+    border-radius: 15px;
+    color: #ccc;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    flex: 0 0 auto;
+}
+
+.ProductsList li img {
+    max-width: 100px;
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    background-color: #1e1e1e;
-}
-
-.ProductsList div {
-    margin-bottom: 5px;
-    background-color: #1e1e1e;
-}
-
-.ProductsList strong {
-    font-weight: bold;
-    color: #f5f5f5;
-    background-color: #1e1e1e;
-}
-
-.brand-image {
-    width: 50px;
-    height: auto;
-    display: inline-block;
-    margin-left: 10px;
     background-color: white;
+}
+
+.ProductsList li div {
+    margin: 10px 0;
+}
+
+.ProductsList li div strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.ProductsList li div:nth-child(4) {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.ProductsList li div:nth-child(5) {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ProductsList p {
+    font-weight: bold;
+    font-size: 20px;
 }

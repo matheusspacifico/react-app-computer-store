@@ -48,8 +48,8 @@ function CompletionSheet(props){
 
         setProductName("");
         setPrice("");
-        setSection("");
-        setBrand("");
+        setSection("Computadores");
+        setBrand("HP");
         setCondition("");
     }
 
@@ -101,7 +101,7 @@ function CompletionSheet(props){
                 ></RadioArea>
             </div>
 
-            <SubmitButton name="Enviar"></SubmitButton>   
+            <SubmitButton name="Inserir Produto"></SubmitButton>   
         </form>
     );
 }
