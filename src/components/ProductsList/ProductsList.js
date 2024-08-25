@@ -10,7 +10,6 @@ import terceirosImage from '../../images/terceiros.png';
 function ProductsList(props) {
 
     function chooseImage(brand) {
-        console.log(brand);
         let image;
         switch (brand) {
             case "HP":
