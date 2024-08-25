@@ -1,4 +1,4 @@
-.TextArea {
+.NumberArea {
     display: flex;
     flex-direction: column;
     margin: 10px 0;
@@ -9,7 +9,7 @@
     max-width: 100%;
 }
 
-.TextArea label {
+.NumberArea label {
     margin-bottom: 8px;
     font-size: 1rem;
     color: #e0e0e0;
@@ -17,7 +17,7 @@
     background-color: #1e1e1e;
 }
 
-.TextArea input[type="text"] {
+.NumberArea input[type="number"] {
     width: 96%;
     padding: 10px;
     font-size: 1rem;
@@ -31,7 +31,7 @@
     color: #e0e0e0;
 }
 
-.TextArea input[type="text"]:focus {
+.NumberArea input[type="number"]:focus {
     border-color: #007bff;
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
 }

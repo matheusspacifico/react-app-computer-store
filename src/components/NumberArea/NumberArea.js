@@ -1,13 +1,15 @@
 import React from "react";
-import "./TextArea.css";
+import "./NumberArea.css";
 
-function TextArea(props){
+function NumberArea(props){
     return (
-        <div className="TextArea">
+        <div className="NumberArea">
             <label>{props.label}</label>
             <input 
-                type="text" 
+                type="number" 
                 placeholder={props.placeholder} 
+                min="0" 
+                step="0.01"
                 required
                 value={props.value}
                 onChange={props.onChange}
@@ -16,4 +18,4 @@ function TextArea(props){
     );
 }
 
-export default TextArea;
+export default NumberArea;

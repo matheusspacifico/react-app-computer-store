@@ -1,14 +1,15 @@
 import React from "react";
-import "./TextArea.css";
+import "./RadioArea.css";
 
-function TextArea(props){
+function RadioArea(props){
     return (
-        <div className="TextArea">
+        <div className="RadioArea">
             <label>{props.label}</label>
             <input 
-                type="text" 
-                placeholder={props.placeholder} 
+                type="radio" 
+                name={props.name} 
                 required
+                checked={props.checked}
                 value={props.value}
                 onChange={props.onChange}
             ></input>
@@ -16,4 +17,4 @@ function TextArea(props){
     );
 }
 
-export default TextArea;
+export default RadioArea;
