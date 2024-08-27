@@ -7,6 +7,8 @@ import positivoImage from '../../images/positivo.png';
 import asusImage from '../../images/asus.png';
 import terceirosImage from '../../images/terceiros.png';
 
+import SectionList from "../SectionList/SectionList";
+
 function ProductsList(props) {
 
     function chooseImage(brand) {
@@ -31,28 +33,18 @@ function ProductsList(props) {
         return image;
     }
 
-    let conteudo;
-    if (props.objects.length === 0) {
-        conteudo = <p className="no-products-message">Nenhum produto adicionado!</p>
-    } else {
-        conteudo = (
-            <ul>
-                {props.objects.map((product, index) => (
-                    <li key={index}>
-                        <div><strong>Nome:</strong> {product.productName}</div>
-                        <div><strong>Preço:</strong> ${product.price}</div>
-                        <div><strong>Seção:</strong> {product.section}</div>
-                        <div><strong>Marca:</strong> <img src={chooseImage(product.brand)} alt={product.brand} className="brand-image" /></div>
-                        <div><strong>Condição:</strong> {product.condition}</div>
-                    </li>
-                ))}
-            </ul>
-        );
-    }
+    const sections = ["Computadores", "Acessórios", "Impressoras", "Games", "Gadgets"];
 
     return (
         <div className="ProductsList">
-            {conteudo}
+            {sections.map(section => (
+                <SectionList 
+                    key={section} 
+                    section={section} 
+                    products={props.objects} 
+                    chooseImage={chooseImage} 
+                />
+            ))}
         </div>
     );
 }

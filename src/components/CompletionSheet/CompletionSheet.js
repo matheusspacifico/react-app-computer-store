@@ -46,11 +46,11 @@ function CompletionSheet(props){
             "condition" : condition
         })
 
-        setProductName("");
-        setPrice("");
+        //setProductName("");
+        //setPrice("");
         setSection("Computadores");
         setBrand("HP");
-        setCondition("");
+        //setCondition("");
     }
 
     return (
